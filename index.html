@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Installation - RSVP | RaC Bangalore Spandana </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        :root {
+            /* 1c8507 yes,  990d09 no*/
+            --radio-bg: #1c8507;
+            --radio-fg: white;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #413543;
+            color: #ffffffcc;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #backdrop {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .container {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2D2727;
+            border-radius: 10px;
+            padding: 20px;
+            width: 70vw;
+            max-height: 90vh;
+        }
+
+        .image-wrapper,
+        .form-wrapper {
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            flex: 1;
+        }
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-left: solid 1px #ffffff66;
+            padding-left: 20px;
+            justify-content: space-evenly;
+        }
+
+        label {
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+
+        input {
+            padding: .5em .5em;
+            margin: 0 0 .5em 0;
+            font-size: 12pt;
+            border: none;
+            border-radius: 2px;
+            background: rgba(0, 0, 0, .3);
+            box-shadow: rgba(0, 0, 0, .15) 0 1px 0;
+            color: #ffffffcc;
+        }
+
+        input[data-error="true"],
+        input[data-error="true"]:focus {
+            border-color: #ee4343 !important;
+            box-shadow: #ee4343 0 0 3px !important;
+            color: #ee4343;
+            outline: none;
+        }
+
+        input:focus,
+        input:active {
+            border-color: #8F43EE !important;
+            box-shadow: #8F43EE 0 0 3px !important;
+            outline: none;
+        }
+
+        input[type=submit] {
+            background-color: #8F43EE;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type=radio] {
+            position: absolute;
+            visibility: hidden;
+            display: none;
+        }
+
+        .radio-group {
+            width: max-content;
+            border: solid 2px var(--radio-bg);
+            display: inline-block;
+            margin: 10px auto;
+            border-radius: 5px;
+            transition: border 100ms linear;
+        }
+
+        .radio-group label {
+            color: var(--radio-fg);
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px 20px;
+        }
+
+        input[type=radio]:checked+label {
+            color: var(--radio-fg);
+            background: var(--radio-bg);
+            transition: background 200ms ease-in;
+        }
+
+        .button {
+            display: none;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                overflow: unset;
+            }
+
+            .container {
+                background-color: #2D2727;
+                border-radius: 10px;
+                padding: 10px;
+                width: 90vw;
+                height: 70vh;
+            }
+
+            .form-wrapper {
+                display: none;
+            }
+
+            .form {
+                border-left: none;
+                padding-left: 0px;
+                gap: 10px;
+            }
+
+            .button {
+                display: block;
+                position: absolute;
+                background-color: #8F43EE;
+                color: white;
+                border: 3px white solid;
+                padding: 10px 15px;
+                font-weight: 600;
+                border-radius: 5px;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                outline: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="backdrop"></div>
+    <div>
+        <div class="container">
+            <div class="image-wrapper">
+                <img src="https://images.besttemplates.com/15/Bachelorette-Party-Invitation-Template-premium(1).jpg"
+                    alt="installation details" class="fluid">
+            </div>
+            <div class="form-wrapper">
+                <form class="form" method="post"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLScRlfhwOA-j7IrDN87gfPrcceg5vzr_rpQOG-mcIzU0Zo8ivw/formResponse"
+                    target="hidden_iframe" onsubmit="return validateForm()">
+                    <img src="./White.png" alt="Rotaract Club of Bangalore Spandana Logo"
+                        style="max-width: 50%; margin: 0 auto;">
+                    <h2 style="text-align: center; margin-top: 0;">Installation - RSVP</h2>
+                    <div style="display:flex; flex-direction: column;">
+                        <label for="Name">Your Name</label>
+                        <input type="text" placeholder="Name" name="entry.534042092" id="name" data-error="false">
+                    </div>
+                    <div style="display:flex; flex-direction: column;">
+                        <label for="Name">Contact</label>
+                        <input type="text" placeholder="Email/Phone Number" name="entry.460414969" id="contact"
+                            data-error="false">
+                    </div>
+                    <div style="display:flex; flex-direction: column;">
+                        <p style="text-align: center; margin-bottom: 0;">Will you be attending the event?</p>
+                        <div class="radio-group" name="entry.198735442">
+                            <input type="radio" id="YES" name="entry.198735442" value="YES" checked>
+                            <label for="YES">YES</label>
+                            <input type="radio" id="NO" name="entry.198735442" value="NO">
+                            <label for="NO">NO</label>
+                        </div>
+                    </div>
+                    <input type="submit" id="submit_btn" value="Submit Response">
+                </form>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted)  {alert('Recorded your response successfully'); window.location.reload();}"></iframe>
+
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="button" onclick="show_form()"> RSVP → </button>
+        <button class="button" onclick="show_invite()" style="display: none;"> ← Invite </button>
+    </div>
+
+
+    <script src="/particles.js"></script>
+    <script>
+        const radioGroup = document.querySelector('.radio-group');
+        const noRadio = document.querySelector('#NO');
+        radioGroup.addEventListener('change', (event) => {
+            if (noRadio.checked) {
+                document.querySelector(':root').style.setProperty('--radio-bg', '#990d09');
+            }
+            else {
+                document.querySelector(':root').style.setProperty('--radio-bg', '#1c8507');
+            }
+        });
+
+        particlesJS.load('backdrop', '/config.json', function () {
+            console.log('backdrop config loaded');
+        });
+
+        function show_form() {
+            document.getElementsByClassName("image-wrapper")[0].style.display = "none";
+            document.getElementsByClassName("form-wrapper")[0].style.display = "flex";
+            document.getElementsByClassName("button")[0].style.display = "none";
+            document.getElementsByClassName("button")[1].style.display = "block";
+        }
+        function show_invite() {
+            document.getElementsByClassName("image-wrapper")[0].style.display = "flex";
+            document.getElementsByClassName("form-wrapper")[0].style.display = "none";
+            document.getElementsByClassName("button")[0].style.display = "block";
+            document.getElementsByClassName("button")[1].style.display = "none";
+        }
+        function validateForm() {
+            var submit_btn = document.getElementById('submit_btn');
+            submit_btn.value = "Submitting...";
+            var name = document.getElementById('name');
+            var contact = document.getElementById('contact');
+
+            if (name.value.trim() === '') {
+                name.setAttribute('data-error', 'true');
+                submit_btn.value = "Submit Response";
+                return false;
+            } else {
+                name.setAttribute('data-error', 'false');
+            }
+            if (contact.value.trim() === '') {
+                contact.setAttribute('data-error', 'true');
+                submit_btn.value = "Submit Response";
+                return false;
+            } else if (!validateContact(contact.value)) {
+                contact.setAttribute('data-error', 'true');
+                submit_btn.value = "Submit Response";
+                return false;
+            } else {
+                contact.setAttribute('data-error', 'false');
+            }
+            console.log("here2")
+            submit_btn.value = "Submitted";
+            submit_btn.disabled = true;
+            submitted = true;
+            return true;
+        }
+
+        function validateContact(c) {
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            var phoneRegex = /^[6789]\d{9}$/;
+            return emailRegex.test(c) || phoneRegex.test(c);
+        }
+    </script>
+</body>
+
+</html>
