@@ -137,9 +137,17 @@
             display: none;
         }
 
+        .hide-desktop{
+            display: none;
+        }
+
         @media (max-width: 700px) {
             body {
                 overflow: unset;
+            }
+
+            .hide-desktop{
+                display: block;
             }
 
             .container {
@@ -149,7 +157,9 @@
                 width: 90vw;
                 height: 70vh;
             }
-
+            .image-wrapper{
+                flex-direction: column;
+            }
             .form-wrapper {
                 display: none;
             }
@@ -184,8 +194,11 @@
     <div>
         <div class="container">
             <div class="image-wrapper">
-                <img src="https://images.besttemplates.com/15/Bachelorette-Party-Invitation-Template-premium(1).jpg"
-                    alt="installation details" class="fluid">
+                <img src="./White.png" alt="Rotaract Club of Bangalore Spandana Logo"
+                        style="max-width: 50%; margin: 0 auto;" class="hide-desktop">
+                <a href="./Invite.webp">
+                <img src="./Invite.webp"
+                    alt="installation details" class="fluid"></a>
             </div>
             <div class="form-wrapper">
                 <form class="form" method="post"
@@ -284,9 +297,6 @@
             } else {
                 contact.setAttribute('data-error', 'false');
             }
-            console.log("here2")
-            submit_btn.value = "Submitted";
-            submit_btn.disabled = true;
             submitted = true;
             return true;
         }
