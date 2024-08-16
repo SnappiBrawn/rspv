@@ -171,7 +171,8 @@
             }
 
             .button {
-                display: block;
+                display: flex;
+                align-items: center;
                 position: absolute;
                 background-color: #8F43EE;
                 color: white;
@@ -239,8 +240,8 @@
         </div>
     </div>
     <div>
-        <button class="button" onclick="show_form()"> RSVP → </button>
-        <button class="button" onclick="show_invite()" style="display: none;"> ← Invite </button>
+        <button class="button" onclick="show_form()"> RSVP <img src="./arrow-right.svg"> </button>
+        <button class="button" onclick="show_invite()" style="display: none;"> <img src="./arrow-left.svg"> Invite </button>
     </div>
 
 
@@ -265,12 +266,12 @@
             document.getElementsByClassName("image-wrapper")[0].style.display = "none";
             document.getElementsByClassName("form-wrapper")[0].style.display = "flex";
             document.getElementsByClassName("button")[0].style.display = "none";
-            document.getElementsByClassName("button")[1].style.display = "block";
+            document.getElementsByClassName("button")[1].style.display = "flex";
         }
         function show_invite() {
             document.getElementsByClassName("image-wrapper")[0].style.display = "flex";
             document.getElementsByClassName("form-wrapper")[0].style.display = "none";
-            document.getElementsByClassName("button")[0].style.display = "block";
+            document.getElementsByClassName("button")[0].style.display = "flex";
             document.getElementsByClassName("button")[1].style.display = "none";
         }
         function validateForm() {
